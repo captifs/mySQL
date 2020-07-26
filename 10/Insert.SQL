@@ -30,3 +30,13 @@ VALUES(
 
 INSERT INTO departments VALUES ('d010', 'Business Analysis');
 
+
+COMMIT;
+--Change the “Business Analysis” department name to “Data Analysis”.Hint: To solve this exercise, --use the --“departments” table.
+
+UPDATE departments
+SET dept_name = 'Data Analysis'
+WHERE dept_name = 'Business Analysis';
+
+ROLLBACK;
+
