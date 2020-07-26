@@ -45,5 +45,17 @@ SELECT * FROM employees
 WHERE first_name LIKE ('%Jack%');
  --Once you have done that, extract another list containing the names of employees that do not contain “Jack”.
  SELECT * FROM employees
-WHERE first_name NOT LIKE ('%Jack%');                      
+WHERE first_name NOT LIKE ('%Jack%');
+ 
+--Select all the information from the “salaries” table regarding contracts from 66,000 to 70,000 dollars per year.
+SELECT * FROM salaries
+WHERE salary BETWEEN 66000 AND 70000;
+
+--Retrieve a list with all individuals whose employee number is not between ‘10004’ and ‘10012’.
+SELECT * FROM employee 
+WHERE emp_no NOT BETWEEN 10004 AND 10012;
+
+--Select the names of all departments with numbers between ‘d003’ and ‘d006’
+SELECT dept_name FROM departments
+WHERE dept_no BETWEEN 'd003' AND 'd006';                      
                        
