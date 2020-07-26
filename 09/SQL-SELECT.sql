@@ -67,3 +67,8 @@ WHERE gender = 'F' AND hire_date >= '2000-01-01';
 SELECT * FROM salaries
 
 WHERE salary >= 150000;
+                       
+--Obtain a list with all different “hire dates” from the “employees” table.
+SELECT DISTINCT hire_date
+FROM employees;
+
