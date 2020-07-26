@@ -18,7 +18,8 @@ CREATE TABLE customers
   last_name VARCHAR(255),
    email_address VARCHAR(255),
 number_of_complaints INT,
-primary key (customer_id)
+PRIMARY KEY (customer_id)
+FOREIGN KEY (customer_id) REFERENCES customers(customer_id) ON DELETE CASCADE
 );
 
 
