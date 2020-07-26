@@ -26,8 +26,13 @@ CREATE TABLE customers
   last_name VARCHAR(255),
    email_address VARCHAR(255),
 number_of_complaints INT,
-PRIMARY KEY (customer_id)
+PRIMARY KEY (customer_id),
+UNIQUE KEY (email_address)
 );
+/* to add a constraint to an existing table
+ALTER TABLE customers
+ADD UNIQUE KEY (email_address);
+*/
 
 
 CREATE TABLE items
