@@ -5,7 +5,7 @@ CREATE TABLE sales
     date_of_purchase DATE,
     customer_id INT,
     item_code VARCHAR(10),
-    PRIMARY KEY (purchase_number)
+    PRIMARY KEY (purchase_number),
 FOREIGN KEY (customer_id) REFERENCES customers(customer_id) ON DELETE CASCADE
     );
 
@@ -18,17 +18,17 @@ DROP FOREIGN KEY  sales_ibfk_1;
 */
 
 
-
 CREATE TABLE customers
 (
- customer_id INT,
- first_name VARCHAR(255),
-  last_name VARCHAR(255),
-   email_address VARCHAR(255),
+ customer_id INT AUTO_INCREMENT,
+first_name VARCHAR(255),
+last_name VARCHAR(255),
+gender ENUM('M', 'F'),
+email_address VARCHAR(255),
 number_of_complaints INT,
-PRIMARY KEY (customer_id),
-UNIQUE KEY (email_address)
+PRIMARY KEY (customer_id)
 );
+
 /* to add a constraint to an existing table
 ALTER TABLE customers
 ADD UNIQUE KEY (email_address);
