@@ -1,3 +1,12 @@
+--unique
+ALTER TABLE customers
+ADD UNIQUE KEY (email_address);
+
+ALTER TABLE customers
+DROP INDEX email_address;
+
+
+
 --default 
 ALTER TABLE customers
 CHANGE COLUMN number_of_complaints number_of_complaints INT DEFAULT 0;
