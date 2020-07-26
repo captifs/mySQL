@@ -26,3 +26,7 @@ VALUES(
 '999-01-01');
 
 
+--Create a new department called “Business Analysis”. Register it under number ‘d010’.</p><p><em>Hint: To --solve this exercise, use the “departments” table.
+
+INSERT INTO departments VALUES ('d010', 'Business Analysis');
+
