@@ -32,6 +32,9 @@ UNIQUE KEY (email_address)
 /* to add a constraint to an existing table
 ALTER TABLE customers
 ADD UNIQUE KEY (email_address);
+remove unique key:
+ALTER TABLE customers
+DROP INDEX email_address;
 */
 
 
