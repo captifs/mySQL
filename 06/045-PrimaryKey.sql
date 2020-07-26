@@ -12,6 +12,9 @@ FOREIGN KEY (customer_id) REFERENCES customers(customer_id) ON DELETE CASCADE
 /* if sales already exists without a foreign key we can do this: 
 ALTER TABLE sales
 ADD FOREIGN KEY (customer_id) REFERENCES customers(customer_id) ON DELETE CASCADE;
+or drop foreign key
+ALTER TABLE sales
+DROP FOREIGN KEY  sales_ibfk_1;
 */
 
 
