@@ -6,6 +6,7 @@ CREATE TABLE sales
     customer_id INT,
     item_code VARCHAR(10),
     PRIMARY KEY (purchase_number)
+FOREIGN KEY (customer_id) REFERENCES customers(customer_id) ON DELETE CASCADE
     );
     
 
@@ -19,7 +20,6 @@ CREATE TABLE customers
    email_address VARCHAR(255),
 number_of_complaints INT,
 PRIMARY KEY (customer_id)
-FOREIGN KEY (customer_id) REFERENCES customers(customer_id) ON DELETE CASCADE
 );
 
 
