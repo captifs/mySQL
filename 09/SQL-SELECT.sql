@@ -79,3 +79,15 @@ WHERE salary >= 100000;
 
 --How many managers do we have in the “employees” database? Use the star symbol (*) in your code to solve this exercise.
 SELECT COUNT(*) FROM dept_manager;
+                       
+                       
+                       
+ --Select all data from the “employees” table, ordering it by “hire date” in descending order.
+SELECT * FROM employees
+ORDER BY hire_date desc;
+
+--Write a query that obtains two columns. The first column must contain annual salaries higher than 80,000 dollars. The second column, renamed to “emps_with_same_salary”, must show the number of employees contracted to that salary. Lastly, sort the output by the first column.
+
+SELECT salary,COUNT(emp_no) AS emps_with_same_salary FROM salaries 
+WHERE salary > 80000
+GROUP BY BY salary;                      
