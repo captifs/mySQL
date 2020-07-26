@@ -8,7 +8,11 @@ CREATE TABLE sales
     PRIMARY KEY (purchase_number)
 FOREIGN KEY (customer_id) REFERENCES customers(customer_id) ON DELETE CASCADE
     );
-    
+
+/* if sales already exists without a foreign key we can do this: 
+ALTER TABLE sales
+ADD FOREIGN KEY (customer_id) REFERENCES customers(customer_id) ON DELETE CASCADE;
+*/
 
 
 
