@@ -91,3 +91,9 @@ ORDER BY hire_date desc;
 SELECT salary,COUNT(emp_no) AS emps_with_same_salary FROM salaries 
 WHERE salary > 80000
 GROUP BY BY salary;                      
+
+                       
+----Select all employees whose average salary is higher than $120,000 per annum.
+SELECT emp_no,AVG(SALARY) FROM salaries
+GROUP BY emp_no
+ORDER BY emp_no;                       
