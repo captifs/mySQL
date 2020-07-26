@@ -59,3 +59,11 @@ WHERE emp_no NOT BETWEEN 10004 AND 10012;
 SELECT dept_name FROM departments
 WHERE dept_no BETWEEN 'd003' AND 'd006';                      
                        
+--Retrieve a list with data about all female employees who were hired in the year 2000 or after.
+SELECT * FROM employees
+WHERE gender = 'F' AND hire_date >= '2000-01-01';
+
+--Extract a list with all employees’ salaries higher than $150,000 per annum.
+SELECT * FROM salaries
+
+WHERE salary >= 150000;
