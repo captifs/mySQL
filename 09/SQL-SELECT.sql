@@ -39,3 +39,11 @@ WHERE hire_date LIKE ('%2000%');
 --Retrieve a list with all employees whose employee number is written with 5 characters, and starts with “1000”. 
 SELECT * FROM employees
 WHERE emp_no LIKE  ('1000_');
+                       
+--Extract all individuals from the ‘employees’ table whose first name contains “Jack”.  
+SELECT * FROM employees
+WHERE first_name LIKE ('%Jack%');
+ --Once you have done that, extract another list containing the names of employees that do not contain “Jack”.
+ SELECT * FROM employees
+WHERE first_name NOT LIKE ('%Jack%');                      
+                       
