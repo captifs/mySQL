@@ -108,4 +108,8 @@ GROUP BY emp_no
 
 HAVING COUNT(from_date) > 1
 
-ORDER BY emp_no;                       
+ORDER BY emp_no;   
+                       
+ --Select the first 100 rows from the ‘dept_emp’ table.
+SELECT * FROM dept_emp
+LIMIT 100;                      
